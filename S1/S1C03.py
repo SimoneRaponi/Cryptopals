@@ -42,7 +42,7 @@ def scorer(input_bytes):
     return score
 
 def print_result(candidate):
-    print("Key:" + str(candidate['key']))
+    print("Key:" + chr(candidate['key']))
     print("Plaintext:" + str(candidate['plaintext'].rstrip()))
     print("Score:" + str(candidate['score']))
 
@@ -54,7 +54,5 @@ def main():
 
     print_result(candidate)
             
-   
-
 if __name__ == '__main__':
     main()
